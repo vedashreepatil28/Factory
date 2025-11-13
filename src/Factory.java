@@ -24,14 +24,28 @@ public class Factory {
     to say new _____*/
     public Factory(){
         System.out.println("we make houses");
-        yearFounded = 2025;
+        yearFounded = 1998;
         isOpen = false;
         earnings = 1.1;
         products = "houses";
         factoryInfo();
 
-        //todo: change the value of the yearFounded and isOpen
-        //todo: call factoryInfo
+        //type varName = value;
+        //this is a complex variable that we call object. h1 is the object of our house class
+        House h1 = new House();
+        h1.owner = "Mr. Kim";
+        System.out.println("The owner is: " + h1.owner);
+        h1.address = "Milton MA";
+        System.out.println("the address is: " + h1.address);
+        h1.isOccupied = true;
+        System.out.println("is this house occupied: " + h1.isOccupied);
+        h1.walls = 4;
+        System.out.println("How many walls are there: " + h1.walls);
+        h1.size = 500;
+        System.out.println("what is the area in sq meters: " + h1.size);
+
+
+        //todo: give all the house instance variables values
 
     }
 
@@ -39,8 +53,10 @@ public class Factory {
     public void factoryInfo(){
         System.out.println("this is factory info:");
         System.out.println("what we sell:" + products);
-        System.out.println("the earnings:" + earnings);
+        System.out.println("the earnings (in millions):" + earnings);
         System.out.println("the year founded:" + yearFounded);
+
+
 
     }
 
