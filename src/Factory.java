@@ -23,7 +23,6 @@ public class Factory {
     and they have the same name as the class. When we use a constructor we always have
     to say new _____*/
     public Factory(){
-        System.out.println("we make houses");
         yearFounded = 1998;
         isOpen = false;
         earnings = 1.1;
@@ -44,8 +43,17 @@ public class Factory {
         h1.size = 500;
         System.out.println("what is the area in sq meters: " + h1.size);
 
+        House h2 = new House();
 
-        //todo: give all the house instance variables values
+        System.out.println(h2.size);
+        h2.printInfo();
+
+        House myHouse = new House();
+        myHouse.printInfo();
+
+        System.out.println("My custom house: ");
+        House customHouse = new House(200.24,8,"Ms.Blair");
+        customHouse.printInfo();
 
     }
 
