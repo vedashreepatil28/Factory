@@ -16,7 +16,6 @@ public class Factory {
         System.out.println("Welcome to Vedashree's factory");
 
         new Factory();
-
     }
 
     /*this is a constructor, they are a special type of method, they don't have "void"
@@ -54,6 +53,15 @@ public class Factory {
         System.out.println("My custom house: ");
         House customHouse = new House(200.24,8,"Ms.Blair", "375 Randolph Ave", true);
         customHouse.printInfo();
+
+        System.out.println();
+
+        Flowers f1 = new Flowers();
+        f1.printInfo();
+        System.out.println();
+        Flowers f2 = new Flowers("Rose", 8, "Pink", false);
+        f2.printInfo();
+
 
     }
 
