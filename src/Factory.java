@@ -52,7 +52,7 @@ public class Factory {
         myHouse.printInfo();
 
         System.out.println("My custom house: ");
-        House customHouse = new House(200.24,8,"Ms.Blair");
+        House customHouse = new House(200.24,8,"Ms.Blair", "375 Randolph Ave", true);
         customHouse.printInfo();
 
     }

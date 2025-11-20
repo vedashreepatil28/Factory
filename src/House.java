@@ -31,15 +31,18 @@ public class House {
         System.out.println("is it occupied: " + isOccupied);
 
     }
-        /*todo: add two more perameters to the house constructor, 1 for
+        /*todo: add two more parameters to the house constructor, 1 for
         *   isOccupied and 1 for address. set the instance variable's
-        *   value to the perameter. fix the related problems by adding
+        *   value to the parameter. fix the related problems by adding
         *   them o the code in the factory Class*/
-    //the perameter is similar to the name but not the same
-    public House (double pSize, int pWalls, String pOwner){
+    //the parameter is similar to the name but not the same
+    public House (double pSize, int pWalls, String pOwner, String pAddress,boolean pIsOccupied){
       size = pSize;
       walls = pWalls;
       owner = pOwner;
+      address = pAddress;
+      isOccupied = pIsOccupied;
+
 
 
     }
